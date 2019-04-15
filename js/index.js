@@ -38,27 +38,37 @@ const siteContent = {
 };
 
 
-//nav
+// //nav
 
-// what am i even doing
-const navA = document.querySelectorAll('a');
-navA[1].textcontent= "services";
-navA[2].textcontent= "product";
-navA[3].textcontent= "vision";
-navA[4].textcontent= "features";
-navA[5].textcontent= "about";
-navA[6].textcontent= "contact";
+// // what am i even doing
+// const navA = document.querySelectorAll('.nav a');
+// // const navArray = Array.from(navA);
+// // navArray.foreach(function(element){
+// //   console.log()
+// // })
 
 
 
 
+// navA[0].textcontent= "services";
+// navA[1].textcontent= "product";
+// navA[2].textcontent= "vision";
+// navA[3].textcontent= "features";
+// navA[4].textcontent= "about";
+// navA[5].textcontent= "contact";
 
 
-// Example: Update the img src for the logo
+
+
+
+
+// // Example: Update the img src for the logo
+// let logo = document.getElementById("logo-img");
+// // logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
 let logo = document.getElementById("logo-img");
-// logo.setAttribute('src', siteContent["nav"]["img-src"])
 logo.src = 'img/logo.png';
-
 
 
 //cta
@@ -68,9 +78,7 @@ logo.src = 'img/header-img.png';
 
 
 
-
-
-//main content
+// //main content
 
 let midPageAccent = document.getElementById("middle-img");
 logo.src = 'img/mid-page-accent.jpg';
