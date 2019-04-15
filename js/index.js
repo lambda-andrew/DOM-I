@@ -41,47 +41,51 @@ const siteContent = {
 // //nav
 
 // // what am i even doing
+
 // const navA = document.querySelectorAll('.nav a');
 // // const navArray = Array.from(navA);
 // // navArray.foreach(function(element){
 // //   console.log()
 // // })
 
-
-
-
-// navA[0].textcontent= "services";
+const navA = document.querySelectorAll('.nav').children;
+navA[0].textcontent= ["nav"]["nav-item-0"];
+navA[1].textcontent= ["nav"]["nav-item-1"];
+navA[2].textcontent= ["nav"]["nav-item-2"];
+navA[3].textcontent= ["nav"]["nav-item-3"];
+navA[4].textcontent= ["nav"]["nav-item-4"];
+navA[5].textcontent= ["nav"]["nav-item-5"];
 // navA[1].textcontent= "product";
 // navA[2].textcontent= "vision";
 // navA[3].textcontent= "features";
 // navA[4].textcontent= "about";
 // navA[5].textcontent= "contact";
-
-
-
-
-
-
-// // Example: Update the img src for the logo
-// let logo = document.getElementById("logo-img");
-// // logo.setAttribute('src', siteContent["nav"]["img-src"])
+navA.style.color='green';
+navA.appendChild('cats');
+navA.prepend('dogs');
 
 
 let logo = document.getElementById("logo-img");
-logo.src = 'img/logo.png';
+logo.setAttribute('src', siteContent["nav"]["img-src"])
+// logo.src = 'img/logo.png';
 
 
 //cta
-
 let ctaImg = document.getElementById("cta-img");
-logo.src = 'img/header-img.png';
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+// logo.src = 'img/header-img.png';
 
 
 
 // //main content
-
 let midPageAccent = document.getElementById("middle-img");
-logo.src = 'img/mid-page-accent.jpg';
+midPageAccent.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+// logo.src = 'img/mid-page-accent.jpg';
+
+
+
+
+
 
 //contact
 
