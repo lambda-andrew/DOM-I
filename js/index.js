@@ -66,16 +66,32 @@ ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
 //Start Main Content
 //Top Content
+//Features
 const features = document.querySelector(".main-content .top-content h4");
 features.textContent = siteContent["main-content"]["features-h4"];
 
 const featuresContent = document.querySelector("p");
 featuresContent.textContent = siteContent["main-content"]["features-content"];
 
+//About 
+
+
+
 //Update the img src for middle img
 const mainImg = document.getElementById("middle-img");
 mainImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 
+//Start Bottom Content 
+//Services
+const services = document.querySelector(".main-content .bottom-content h4");
+services.textContent = siteContent["main-content"]["services-h4"];
+
+const servicesContent = document.querySelector(".bottom-content p");
+servicesContent.textContent = siteContent["main-content"]["services-content"];
+
+//Product
+
+//Vision
 
 //Start Contact Section
 //Display Contact Section
