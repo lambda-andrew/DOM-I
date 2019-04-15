@@ -39,7 +39,15 @@ const siteContent = {
 
 
 //nav
-// const multipleClasses = document.querySelectorAll('.nav-item');
+
+// what am i even doing
+const navA = document.querySelectorAll('a');
+navA[1].textcontent= "services";
+navA[2].textcontent= "product";
+navA[3].textcontent= "vision";
+navA[4].textcontent= "features";
+navA[5].textcontent= "about";
+navA[6].textcontent= "contact";
 
 
 
