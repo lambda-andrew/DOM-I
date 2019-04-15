@@ -62,18 +62,22 @@ btn.textContent = siteContent["cta"]["button"];
 
 //Update the img src for cta 
 const ctaImg = document.getElementById("cta-img");
-ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
 //Start Main Content
+//Top Content
+const features = document.querySelector(".main-content .top-content h4");
+features.textContent = siteContent["main-content"]["features-h4"];
+
 
 
 //Update the img src for middle img
 const mainImg = document.getElementById("middle-img");
-mainImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+mainImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 
 
 //Start Contact Section
-//Display Contact Header
+//Display Contact Section
 const contactHead = document.querySelector(".contact").children;
 contactHead[0].textContent = siteContent["contact"]["contact-h4"];
 contactHead[1].textContent = siteContent["contact"]["address"];
