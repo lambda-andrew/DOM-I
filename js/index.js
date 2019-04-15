@@ -83,3 +83,13 @@ bottomContent[1].querySelector("p").textContent = siteContent["main-content"]["p
 
 bottomContent[2].querySelector("h4").textContent = siteContent["main-content"]["vision-h4"];
 bottomContent[2].querySelector("p").textContent = siteContent["main-content"]["vision-content"];
+
+//Contact
+let contactH4 = document.querySelector(".contact");
+contactH4.querySelector("h4").textContent = siteContent["contact"]["contact-h4"];
+
+let contactText = document.querySelectorAll(".contact p");
+
+contactText[0].textContent = siteContent["contact"]["address"];
+contactText[1].textContent = siteContent["contact"]["phone"];
+contactText[2].textContent = siteContent["contact"]["email"];
