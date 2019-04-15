@@ -69,7 +69,8 @@ ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
 const features = document.querySelector(".main-content .top-content h4");
 features.textContent = siteContent["main-content"]["features-h4"];
 
-
+const featuresContent = document.querySelector("p");
+featuresContent.textContent = siteContent["main-content"]["features-content"];
 
 //Update the img src for middle img
 const mainImg = document.getElementById("middle-img");
