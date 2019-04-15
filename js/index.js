@@ -48,3 +48,13 @@ for (let i = 0; i < 6; i++) {
   navLinks[i].textContent = siteContent["nav"][`nav-item-${i + 1}`];
   navLinks[i].style.color = "green";
 }
+
+// CTA
+let ctaHeader = document.querySelector("h1");
+ctaHeader.innerHTML = siteContent["cta"]["h1"].split(' ').join(`<br>`);
+
+let ctaButton = document.querySelector("button");
+ctaButton.textContent = siteContent["cta"]["button"];
+
+let ctaImg = document.querySelector("#cta-img");
+ctaImg.src = siteContent["cta"]["img-src"];
