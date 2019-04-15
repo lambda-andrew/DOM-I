@@ -37,14 +37,29 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
-const logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+//Start header/navbar
 
+//Update the img src for the logo
+const logo = document.getElementById("logo-img");
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+//Start cta section
+
+//Display "DOM IS AWESOME"
+const ctaText = document.querySelector("h1");
+ctaText.textContent = siteContent["cta"]["h1"];
+
+//Display button
+const btn = document.querySelector("button");
+btn.textContent = siteContent["cta"]["button"];
 //Update the img src for cta 
 const ctaImg = document.getElementById("cta-img");
-ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+//Start Main Content
+
 
 //Update the img src for middle img
 const mainImg = document.getElementById("middle-img");
-mainImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+mainImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
