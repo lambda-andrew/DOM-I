@@ -49,6 +49,20 @@ for (let i = 0; i < 6; i++) {
   navLinks[i].style.color = "green";
 }
 
+// Navigation - 2 New
+let nav = document.querySelector("nav");
+
+let appendOne = navLinks[5].cloneNode(true);
+appendOne.textContent = "Append One";
+appendOne.style.color = "red";
+
+let prependOne = navLinks[5].cloneNode(true);
+prependOne.textContent = "Prepend One"
+prependOne.style.color = "blue";
+
+nav.appendChild(appendOne);
+nav.prepend(prependOne);
+
 // CTA
 let ctaHeader = document.querySelector("h1");
 ctaHeader.innerHTML = siteContent["cta"]["h1"].split(' ').join(`<br>`);
