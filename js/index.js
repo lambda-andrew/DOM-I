@@ -100,4 +100,9 @@ let bigImage = document.getElementbyId("cta-img");
 bigImage.setAttribute('src', siteContent["cta"]["img-src"])
 
 // Middle Content
-let mainContent = document.querySelector('.main-content');
+let midContent = document.querySelector('.main-content');
+let featuresHeader = document.createElement('h4');
+featuresHeader.textContent = "Features"
+midContent.appendChild(featuresHeader);
+let midImage = document.getElementById('middle-img');
+midImage.setAttribute('src', siteContent["main-content"]["img/mid-page-accent.jpg"])
