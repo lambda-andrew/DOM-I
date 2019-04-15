@@ -38,7 +38,7 @@ const siteContent = {
 };
 
 //Start header/navbar
-
+//Display nav items in 'a' tag
 const navItems = document.querySelector("nav").childNodes;
 navItems[1].textContent = siteContent["nav"]["nav-item-1"];
 navItems[3].textContent = siteContent["nav"]["nav-item-2"];
@@ -74,8 +74,11 @@ mainImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
 //Start Contact Section
 //Display Contact Header
-const contactHead = document.querySelector("section.contact h4");
-contactHead.textContent = siteContent["contact"]["contact-h4"];
+const contactHead = document.querySelector(".contact").children;
+contactHead[0].textContent = siteContent["contact"]["contact-h4"];
+contactHead[1].textContent = siteContent["contact"]["address"];
+contactHead[2].textContent = siteContent["contact"]["phone"];
+contactHead[3].textContent = siteContent["contact"]["email"];
 
 //Start Footer 
 //Display copyright
