@@ -39,12 +39,19 @@ const siteContent = {
 
 //Start header/navbar
 
+const navItems = document.querySelector("nav").childNodes;
+navItems[1].textContent = siteContent["nav"]["nav-item-1"];
+navItems[3].textContent = siteContent["nav"]["nav-item-2"];
+navItems[5].textContent = siteContent["nav"]["nav-item-3"];
+navItems[7].textContent = siteContent["nav"]["nav-item-4"];
+navItems[9].textContent = siteContent["nav"]["nav-item-5"];
+navItems[11].textContent = siteContent["nav"]["nav-item-6"];
+
 //Update the img src for the logo
 const logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 //Start cta section
-
 //Display "DOM IS AWESOME"
 const ctaText = document.querySelector("h1");
 ctaText.textContent = siteContent["cta"]["h1"];
@@ -52,6 +59,7 @@ ctaText.textContent = siteContent["cta"]["h1"];
 //Display button
 const btn = document.querySelector("button");
 btn.textContent = siteContent["cta"]["button"];
+
 //Update the img src for cta 
 const ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
@@ -62,4 +70,15 @@ ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 //Update the img src for middle img
 const mainImg = document.getElementById("middle-img");
 mainImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+
+//Start Contact Section
+//Display Contact Header
+const contactHead = document.querySelector("section.contact h4");
+contactHead.textContent = siteContent["contact"]["contact-h4"];
+
+//Start Footer 
+//Display copyright
+const footer = document.querySelector("footer p");
+footer.textContent = siteContent["footer"]["copyright"];
 
