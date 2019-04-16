@@ -96,3 +96,15 @@ let visionContent = midParagraphs[4];
 visionContent.textContent = siteContent["main-content"]["vision-content"]
 
 //Bottom Content
+let contactHeader = midContentHeader[5];
+contactHeader.textContent = siteContent["contact"]["contact-h4"]
+let address = midParagraphs[5];
+address.textContent = siteContent["contact"]["address"]
+let phoneNumber = midParagraphs[6];
+phoneNumber.textContent = siteContent["contact"]["phone"]
+let emailAddress = midParagraphs[7];
+emailAddress.textContent = siteContent["contact"]["email"]
+
+//Footer
+let copyRight = document.querySelector('footer p')
+copyRight.textContent = siteContent["footer"]["copyright"]
