@@ -46,16 +46,34 @@ let navigationBar = document.querySelector('header nav');
 let anchors = document.getElementsByTagName('a');
 let anchorOne = anchors[0];
 anchorOne.textContent = siteContent["nav"]["nav-item-1"];
+anchorOne.style.color = "green"
 let anchorTwo = anchors[1];
 anchorTwo.textContent = siteContent["nav"]["nav-item-2"];
+anchorTwo.style.color = "green"
 let anchorThree = anchors[2];
 anchorThree.textContent = siteContent["nav"]["nav-item-3"];
+anchorThree.style.color = "green"
 let anchorFour = anchors[3];
 anchorFour.textContent = siteContent["nav"]["nav-item-4"];
+anchorFour.style.color = "green"
 let anchorFive = anchors[4];
 anchorFive.textContent = siteContent["nav"]["nav-item-5"];
+anchorFive.style.color = "green"
 let anchorSix = anchors[5];
 anchorSix.textContent = siteContent["nav"]["nav-item-6"];
+anchorSix.style.color = "green"
+let newNavOne = document.createElement('a');
+newNavOne.textContent = "FAQ"
+newNavOne.style.color = "green"
+newNavOne.style.marginLeft = "20%"
+anchorSix.appendChild(newNavOne);
+let newNavTwo = document.createElement('a');
+newNavTwo.textContent = "Goods"
+newNavTwo.style.color = "green"
+newNavTwo.style.marginLeft = "20%"
+newNavOne.appendChild(newNavTwo);
+
+
 
 
 
