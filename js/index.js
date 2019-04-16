@@ -60,19 +60,18 @@ anchorSix.textContent = siteContent["nav"]["nav-item-6"];
 
 
 //Top content
-let topContent = document.querySelector('.cta');
-let wordContent = document.querySelector('.cta-text');
 let bigDom = document.querySelector('.cta h1');
-bigDom.textContent = "DOM is Awesome"
+bigDom.textContent = siteContent["cta"]["h1"]
 let button = document.querySelector('button');
-button.textContent = "Get Started"
-// let bigImage = document.getElementbyId("cta-img");
-// bigImage.setAttribute('src', "img/header-img.png")
+button.textContent = siteContent["cta"]["button"]
+let bigImage = document.getElementById("cta-img");
+bigImage.setAttribute('src', "img/header-img.png")
 
 // Middle Content
 let midContent = document.querySelector('.main-content');
-let featuresHeader = document.createElement('h4');
-featuresHeader.textContent = "Features"
-midContent.appendChild(featuresHeader);
+let featuresHeader = document.querySelector('.main-content h4');
+featuresHeader.textContent = siteContent["main-content"]["features-h4"]
+let featContent = document.querySelector('.main-content p');
+featContent.textContent = siteContent["main-content"]["features-content"]
 let midImage = document.getElementById('middle-img');
 midImage.setAttribute('src', "img/mid-page-accent.jpg");
