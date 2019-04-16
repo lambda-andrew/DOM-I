@@ -43,61 +43,31 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Nav Bar
 let navigationBar = document.querySelector('header nav');
-let navAnchor = document.querySelector('header nav a');
+let anchors = document.getElementsByTagName('a');
+let anchorOne = anchors[0];
+anchorOne.textContent = siteContent["nav"]["nav-item-1"];
+let anchorTwo = anchors[1];
+anchorTwo.textContent = siteContent["nav"]["nav-item-2"];
+let anchorThree = anchors[2];
+anchorThree.textContent = siteContent["nav"]["nav-item-3"];
+let anchorFour = anchors[3];
+anchorFour.textContent = siteContent["nav"]["nav-item-4"];
+let anchorFive = anchors[4];
+anchorFive.textContent = siteContent["nav"]["nav-item-5"];
+let anchorSix = anchors[5];
+anchorSix.textContent = siteContent["nav"]["nav-item-6"];
 
-// Nav Items
-// let newNavAnchor = document.createElement('a');
-// newNavAnchor.textContent = "Services"
-// newNavAnchor.style.color = "green"
-// newNavAnchor.style.margin = "0 4%"
-// navAnchor.appendChild(newNavAnchor);
-// let newNavTwo = document.createElement('a');
-// newNavTwo.textContent = "Product"
-// newNavTwo.style.color = "green"
-// newNavTwo.style.margin = "0 4%"
-// navAnchor.appendChild(newNavTwo);
-// let newNavThree = document.createElement('a');
-// newNavThree.textContent = "Vision"
-// newNavThree.style.color = "green"
-// newNavThree.style.margin = "0 4%"
-// navAnchor.appendChild(newNavThree);
-// let newNavFour = document.createElement('a');
-// newNavFour.textContent = "Features"
-// newNavFour.style.color = "green"
-// newNavFour.style.margin = "0 4%"
-// navAnchor.appendChild(newNavFour);
-// let newNavFive = document.createElement('a');
-// newNavFive.textContent = "About"
-// newNavFive.style.color = "green"
-// newNavFive.style.margin = "0 4%"
-// navAnchor.appendChild(newNavFive);
-// let newNavSix = document.createElement('a');
-// newNavSix.textContent = "Contact"
-// newNavSix.style.color = "green"
-// newNavSix.style.margin = "0 4%"
-// navAnchor.appendChild(newNavSix);
-// let newNavSeven = document.createElement('a');
-// newNavSeven.textContent = "Goods"
-// newNavSeven.style.color = "green"
-// newNavSeven.style.margin = "0 4%"
-// navAnchor.appendChild(newNavSeven);
-// let newNavEight = document.createElement('a');
-// newNavEight.textContent = "FAQ"
-// newNavEight.style.color = "green"
-// newNavEight.style.margin = "0 4%"
-// navAnchor.appendChild(newNavEight);
+
 
 //Top content
-// let topContent = document.querySelector('.cta');
-// let wordContent = document.querySelector('.cta-text');
-// let bigDom = document.querySelector('h1');
-// bigDom.textContent = "DOM is Awesome"
-// wordContent.appendChild(bigDom);
-// let button = document.querySelector('button');
-// button.textContent = "Get Started"
-// wordContent.appendChild(button);
+let topContent = document.querySelector('.cta');
+let wordContent = document.querySelector('.cta-text');
+let bigDom = document.querySelector('.cta h1');
+bigDom.textContent = "DOM is Awesome"
+let button = document.querySelector('button');
+button.textContent = "Get Started"
 // let bigImage = document.getElementbyId("cta-img");
-// bigImage.setAttribute('src', siteContent["cta"]["img-src"])
+// bigImage.setAttribute('src', "img/header-img.png")
 
 // Middle Content
 let midContent = document.querySelector('.main-content');
