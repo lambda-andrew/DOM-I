@@ -59,7 +59,7 @@ anchorSix.textContent = siteContent["nav"]["nav-item-6"];
 
 
 
-//Top content
+//Top Content
 let bigDom = document.querySelector('.cta h1');
 bigDom.textContent = siteContent["cta"]["h1"]
 let button = document.querySelector('button');
@@ -68,10 +68,31 @@ let bigImage = document.getElementById("cta-img");
 bigImage.setAttribute('src', "img/header-img.png")
 
 // Middle Content
-let midContent = document.querySelector('.main-content');
-let featuresHeader = document.querySelector('.main-content h4');
+let midContentHeader = document.getElementsByTagName('h4');
+let midParagraphs = document.getElementsByTagName('p')
+let featuresHeader = midContentHeader[0];
 featuresHeader.textContent = siteContent["main-content"]["features-h4"]
-let featContent = document.querySelector('.main-content p');
+let featContent = midParagraphs[0];
 featContent.textContent = siteContent["main-content"]["features-content"]
+let aboutHeader = midContentHeader[1];
+aboutHeader.textContent = siteContent["main-content"]["about-h4"]
+let aboutContent = midParagraphs[1];
+aboutContent.textContent = siteContent["main-content"]["about-content"]
 let midImage = document.getElementById('middle-img');
 midImage.setAttribute('src', "img/mid-page-accent.jpg");
+
+//Mid-Bottom Content
+let servicesHeader = midContentHeader[2];
+servicesHeader.textContent = siteContent["main-content"]["services-h4"]
+let servicesContent = midParagraphs[2];
+servicesContent.textContent = siteContent["main-content"]["services-content"]
+let productHeader = midContentHeader[3];
+productHeader.textContent = siteContent["main-content"]["product-h4"]
+let productContent = midParagraphs[3];
+productContent.textContent = siteContent["main-content"]["product-content"]
+let visionHeader = midContentHeader[4];
+visionHeader.textContent = siteContent["main-content"]["vision-h4"]
+let visionContent = midParagraphs[4];
+visionContent.textContent = siteContent["main-content"]["vision-content"]
+
+//Bottom Content
