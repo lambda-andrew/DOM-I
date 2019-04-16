@@ -37,9 +37,21 @@ const siteContent = {
   },
 };
 
+//Declarations
+const navItems = document.querySelector("nav").childNodes;
+const logo = document.getElementById("logo-img");
+const ctaText = document.querySelector("h1");
+const btn = document.querySelector("button");
+const ctaImg = document.getElementById("cta-img");
+const features = document.querySelector(".main-content .top-content h4");
+const featuresContent = document.querySelector("p");
+const mainImg = document.getElementById("middle-img");
+const services = document.querySelector(".main-content .bottom-content h4");
+const servicesContent = document.querySelector(".bottom-content p");
+const contactHead = document.querySelector(".contact").children;
+const footer = document.querySelector("footer p");
 //Start header/navbar
 //Display nav items in 'a' tag
-const navItems = document.querySelector("nav").childNodes;
 navItems[1].textContent = siteContent["nav"]["nav-item-1"];
 navItems[3].textContent = siteContent["nav"]["nav-item-2"];
 navItems[5].textContent = siteContent["nav"]["nav-item-3"];
@@ -48,29 +60,22 @@ navItems[9].textContent = siteContent["nav"]["nav-item-5"];
 navItems[11].textContent = siteContent["nav"]["nav-item-6"];
 
 //Update the img src for the logo
-const logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 //Start cta section
 //Display "DOM IS AWESOME"
-const ctaText = document.querySelector("h1");
 ctaText.textContent = siteContent["cta"]["h1"];
 
 //Display button
-const btn = document.querySelector("button");
 btn.textContent = siteContent["cta"]["button"];
 
 //Update the img src for cta 
-const ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
 //Start Main Content
 //Top Content
 //Features
-const features = document.querySelector(".main-content .top-content h4");
 features.textContent = siteContent["main-content"]["features-h4"];
-
-const featuresContent = document.querySelector("p");
 featuresContent.textContent = siteContent["main-content"]["features-content"];
 
 //About 
@@ -78,15 +83,11 @@ featuresContent.textContent = siteContent["main-content"]["features-content"];
 
 
 //Update the img src for middle img
-const mainImg = document.getElementById("middle-img");
 mainImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 
 //Start Bottom Content 
 //Services
-const services = document.querySelector(".main-content .bottom-content h4");
 services.textContent = siteContent["main-content"]["services-h4"];
-
-const servicesContent = document.querySelector(".bottom-content p");
 servicesContent.textContent = siteContent["main-content"]["services-content"];
 
 //Product
@@ -95,7 +96,6 @@ servicesContent.textContent = siteContent["main-content"]["services-content"];
 
 //Start Contact Section
 //Display Contact Section
-const contactHead = document.querySelector(".contact").children;
 contactHead[0].textContent = siteContent["contact"]["contact-h4"];
 contactHead[1].textContent = siteContent["contact"]["address"];
 contactHead[2].textContent = siteContent["contact"]["phone"];
@@ -103,6 +103,5 @@ contactHead[3].textContent = siteContent["contact"]["email"];
 
 //Start Footer 
 //Display copyright
-const footer = document.querySelector("footer p");
 footer.textContent = siteContent["footer"]["copyright"];
 
