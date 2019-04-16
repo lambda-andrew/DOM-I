@@ -38,7 +38,7 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
+const logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 const pic = document.getElementById("cta-img");
@@ -52,74 +52,76 @@ const mContent = document.querySelector(".cta-text");
 mContent.textContent = siteContent["cta"]["h1"];
 
 
-// const mButton = document.querySelector(".cta-text");
-// mButton.textContent = siteContent["cta"]["button"];
+// // const mButton = document.querySelector(".cta-text");
+// // mButton.textContent = siteContent["cta"]["button"];
 
-const nav1 = document.querySelector("a");
-nav1.textContent = siteContent["nav"]["nav-item-1"];
-// const nav2 = document.querySelector("a");
-// nav2.textContent = siteContent["nav"]["nav-item-2"];
-// const nav3 = document.querySelectorAll("a");
-// nav3.textContent = siteContent["nav"]["nav-item-3"];
+let nav = document.querySelectorAll("a");
+nav[0].textContent = siteContent["nav"]["nav-item-1"];
+//document.querySelectorAll("a");
+nav[1].textContent = siteContent["nav"]["nav-item-2"];
+//const nav3 = document.querySelectorAll("a");
+nav[2].textContent = siteContent["nav"]["nav-item-3"];
 // const nav4 = document.querySelectorAll("a");
-// nav4.textContent = siteContent["nav"]["nav-item-4"];
+nav[3].textContent = siteContent["nav"]["nav-item-4"];
 // const nav5 = document.querySelectorAll("a");
-// nav5.textContent = siteContent["nav"]["nav-item-5"];
+nav[4].textContent = siteContent["nav"]["nav-item-5"];
 // const nav6 = document.querySelectorAll("a");
-// nav6.textContent = siteContent["nav"]["nav-item-6"];
+nav[5].textContent = siteContent["nav"]["nav-item-6"];
+
+console.log(siteContent["nav"]);
 
 
-const feat = document.querySelector(".main-content .top-content .text-content h4");
-feat.textContent = siteContent["main-content"]["features-h4"];
+let feat = document.querySelectorAll(".main-content .top-content .text-content h4");
+feat[0].textContent = siteContent["main-content"]["features-h4"];
 // feat.style.display = "flex";
 // feat.style.justifyContent = "space-between";
 
-const featP = document.querySelector(".main-content .top-content .text-content p");
-featP.textContent = siteContent["main-content"]["features-content"];
+let featP = document.querySelectorAll(".main-content .top-content .text-content p");
+featP[0].textContent = siteContent["main-content"]["features-content"];
 // featP.style.display = "flex";
 // featP.style.justifyContent = "space-between";
 
-const about = document.querySelector(".main-content .top-content .text-content h4");
-about.textContent = siteContent["main-content"]["about-h4"];
+//const about = document.querySelector(".main-content .top-content .text-content h4");
+feat[1].textContent = siteContent["main-content"]["about-h4"];
 // about.style.display = "flex";
 // about.style.justifyContent = "space-between";
 
-const aboutP = document.querySelector(".main-content .top-content .text-content p");
-aboutP.textContent = siteContent["main-content"]["about-content"];
+//const aboutP = document.querySelector(".main-content .top-content .text-content p");
+featP[1].textContent = siteContent["main-content"]["about-content"];
 // aboutP.style.display = "flex";
 // aboutP.style.justifyContent = "space-between";
 
 
 //top
 
-const ser = document.querySelector(".main-content .bottom-content .text-content h4");
-ser.textContent = siteContent["main-content"]["services-h4"];
-const serP = document.querySelector(".main-content .bottom-content .text-content p");
-serP.textContent = siteContent["main-content"]["services-content"];
+let ser = document.querySelectorAll(".main-content .bottom-content .text-content h4");
+ser[0].textContent = siteContent["main-content"]["services-h4"];
+let serP = document.querySelectorAll(".main-content .bottom-content .text-content p");
+serP[0].textContent = siteContent["main-content"]["services-content"];
 
-const pro = document.querySelector(".main-content .bottom-content .text-content h4");
-pro.textContent = siteContent["main-content"]["product-h4"];
-const proP = document.querySelector(".main-content .bottom-content .text-content p");
-proP.textContent = siteContent["main-content"]["product-content"];
+//const pro = document.querySelector(".main-content .bottom-content .text-content h4");
+ser[1].textContent = siteContent["main-content"]["product-h4"];
+//const proP = document.querySelector(".main-content .bottom-content .text-content p");
+serP[1].textContent = siteContent["main-content"]["product-content"];
 
-const vis = document.querySelector(".main-content .bottom-content .text-content h4");
-vis.textContent = siteContent["main-content"]["vision-h4"];
-const visP = document.querySelector(".main-content .bottom-content .text-content p");
-visP.textContent = siteContent["main-content"]["vision-content"];
+//const vis = document.querySelector(".main-content .bottom-content .text-content h4");
+ser[2].textContent = siteContent["main-content"]["vision-h4"];
+//const visP = document.querySelector(".main-content .bottom-content .text-content p");
+serP[2].textContent = siteContent["main-content"]["vision-content"];
 //bottom
 
-const con = document.querySelector(".contact h4");
-con.textContent = siteContent["contact"]["contact-h4"];
+let conH = document.querySelector(".contact h4");
+conH.textContent = siteContent["contact"]["contact-h4"];
 
-const add = document.querySelector(".contact p");
-add.textContent = siteContent["contact"]["address"];
+ let con = document.querySelectorAll(".contact p");
+con[0].textContent = siteContent["contact"]["address"];
 
-const phone = document.querySelector(".contact p");
-phone.textContent = siteContent["contact"]["phone"];
+// const phone = document.querySelector(".contact p");
+con[1].textContent = siteContent["contact"]["phone"];
 
 
-const email = document.querySelector(".contact p");
-email.textContent = siteContent["contact"]["email"];
+// const email = document.querySelector(".contact p");
+con[2].textContent = siteContent["contact"]["email"];
 
 const copy = document.querySelector("footer");
 copy.textContent = siteContent["footer"]["copyright"];
