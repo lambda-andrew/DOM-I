@@ -52,14 +52,14 @@ navAnchors[0].style.color = "green"
 let newNavOne = document.createElement('a');
 newNavOne.textContent = "FAQ"
 newNavOne.style.color = "green"
-newNavOne.style.margin = "0px 30%"
-navAnchors[0].appendChild(newNavOne);
+newNavOne.style.margin = "0px 30% 0px 0%"
+navAnchors[0].prepend(newNavOne);
 navAnchors[1].textContent = siteContent["nav"]["nav-item-2"]
 navAnchors[1].style.color = "green"
 let newNavTwo = document.createElement('a');
 newNavTwo.textContent = "Ideas"
 newNavTwo.style.color = "green"
-newNavTwo.style.margin = "0px 30%"
+newNavTwo.style.margin = "0px 0% 0px 30%"
 navAnchors[1].appendChild(newNavTwo);
 navAnchors[2].textContent = siteContent["nav"]["nav-item-3"]
 navAnchors[2].style.color = "green"
