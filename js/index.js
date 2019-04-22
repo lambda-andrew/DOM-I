@@ -56,3 +56,10 @@ mainImg.setAttribute('src', siteContent["cta"]["img-src"])
 
 
 //Header and button
+let header = document.querySelector('.cta-text h1');
+header.textContent = siteContent["cta"]["h1"]
+let button = document.querySelector('.cta-text button');
+button.textContent = siteContent["cta"]["button"]
+
+
+//Top-Content
