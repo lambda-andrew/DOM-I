@@ -43,30 +43,34 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Nav
 let navAnchors = document.querySelectorAll('nav a');
-
-
-
-
+//Nav-1
 navAnchors[0].textContent = siteContent["nav"]["nav-item-1"]
 navAnchors[0].style.color = "green"
+//New Nav
 let newNavOne = document.createElement('a');
 newNavOne.textContent = "FAQ"
 newNavOne.style.color = "green"
 newNavOne.style.margin = "0px 30% 0px 0%"
 navAnchors[0].prepend(newNavOne);
+//Nav-Two
 navAnchors[1].textContent = siteContent["nav"]["nav-item-2"]
 navAnchors[1].style.color = "green"
+//New Nav 2
 let newNavTwo = document.createElement('a');
 newNavTwo.textContent = "Ideas"
 newNavTwo.style.color = "green"
 newNavTwo.style.margin = "0px 0% 0px 30%"
 navAnchors[1].appendChild(newNavTwo);
+//Nav-3
 navAnchors[2].textContent = siteContent["nav"]["nav-item-3"]
 navAnchors[2].style.color = "green"
+//Nav-4
 navAnchors[3].textContent = siteContent["nav"]["nav-item-4"]
 navAnchors[3].style.color = "green"
+//Nav-5
 navAnchors[4].textContent = siteContent["nav"]["nav-item-5"]
 navAnchors[4].style.color = "green"
+//Nav-6
 navAnchors[5].textContent = siteContent["nav"]["nav-item-6"]
 navAnchors[5].style.color = "green"
 
