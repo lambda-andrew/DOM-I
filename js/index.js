@@ -43,12 +43,32 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Nav
 let navAnchors = document.querySelectorAll('nav a');
+
+
+
+
 navAnchors[0].textContent = siteContent["nav"]["nav-item-1"]
+navAnchors[0].style.color = "green"
+let newNavOne = document.createElement('a');
+newNavOne.textContent = "FAQ"
+newNavOne.style.color = "green"
+newNavOne.style.margin = "0px 30%"
+navAnchors[0].appendChild(newNavOne);
 navAnchors[1].textContent = siteContent["nav"]["nav-item-2"]
+navAnchors[1].style.color = "green"
+let newNavTwo = document.createElement('a');
+newNavTwo.textContent = "Ideas"
+newNavTwo.style.color = "green"
+newNavTwo.style.margin = "0px 30%"
+navAnchors[1].appendChild(newNavTwo);
 navAnchors[2].textContent = siteContent["nav"]["nav-item-3"]
+navAnchors[2].style.color = "green"
 navAnchors[3].textContent = siteContent["nav"]["nav-item-4"]
+navAnchors[3].style.color = "green"
 navAnchors[4].textContent = siteContent["nav"]["nav-item-5"]
+navAnchors[4].style.color = "green"
 navAnchors[5].textContent = siteContent["nav"]["nav-item-6"]
+navAnchors[5].style.color = "green"
 
 //Main Image
 let mainImg = document.getElementById('cta-img');
