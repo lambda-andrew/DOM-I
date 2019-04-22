@@ -62,4 +62,22 @@ let button = document.querySelector('.cta-text button');
 button.textContent = siteContent["cta"]["button"]
 
 
-//Top-Content
+//Main-Content Headers
+let headers = document.querySelectorAll('h4');
+headers[0].textContent = siteContent["main-content"]["features-h4"]
+headers[1].textContent = siteContent["main-content"]["about-h4"]
+headers[2].textContent = siteContent["main-content"]["services-h4"]
+headers[3].textContent = siteContent["main-content"]["product-h4"]
+headers[4].textContent = siteContent["main-content"]["vision-h4"]
+
+//Middle Image
+let midImg = document.getElementById('middle-img');
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+//Main-Content Content
+let content = document.querySelectorAll('p');
+content[0].textContent = siteContent["main-content"]["features-content"]
+content[1].textContent = siteContent["main-content"]["about-content"]
+content[2].textContent = siteContent["main-content"]["services-content"]
+content[3].textContent = siteContent["main-content"]["product-content"]
+content[4].textContent = siteContent["main-content"]["vision-content"]
