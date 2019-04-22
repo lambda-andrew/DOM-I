@@ -81,3 +81,13 @@ content[1].textContent = siteContent["main-content"]["about-content"]
 content[2].textContent = siteContent["main-content"]["services-content"]
 content[3].textContent = siteContent["main-content"]["product-content"]
 content[4].textContent = siteContent["main-content"]["vision-content"]
+
+//Bottom-Content
+headers[5].textContent = siteContent["contact"]["contact-h4"]
+content[5].textContent = siteContent["contact"]["address"]
+content[6].textContent = siteContent["contact"]["phone"]
+content[7].textContent = siteContent["contact"]["email"]
+
+
+//Footer
+content[8].textContent = siteContent["footer"]["copyright"]
