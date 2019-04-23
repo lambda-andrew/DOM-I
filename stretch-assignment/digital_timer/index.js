@@ -67,6 +67,6 @@ function stopClock(){
   clearInterval(fourthHand);
   littleSeconds.textContent = 0;
   digits.forEach(item => item.style.color = "black")
-
+    button.disabled = false;
 }
 }
