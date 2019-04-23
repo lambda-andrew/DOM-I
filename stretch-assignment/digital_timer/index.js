@@ -18,6 +18,7 @@ button.addEventListener('click', () => timer())
 
 function timer(){
 
+button.disabled = true;
   tens.textContent = 0;
   littleTens.textContent = 0;
   bigSeconds.textContent = 0;
@@ -28,8 +29,8 @@ setInterval(function(){if((tens.textContent * 1) === 10){tens.textContent = 0}})
 
 
 let secondHand = setInterval(function(){littleTens.textContent = (littleTens.textContent * 1) + 1}, 1000);
-setInterval(function(){if((littleTens.textContent * 1) === 9){color()}})
-setInterval(function(){if((littleTens.textContent * 1) === 10){stopClock()}})
+setInterval(function(){if((littleTens.textContent * 1) === 10){color()}})
+setInterval(function(){if((littleTens.textContent * 1) === 10){endTime()}})
 
 
 let thirdHand = setInterval(function(){bigSeconds.textContent = (bigSeconds.textContent * 1) + 1}, 100);
@@ -45,6 +46,17 @@ function color(){
 }
 
 buttonTwo.addEventListener('click', () => stopClock())
+function endTime(){
+  clearInterval(firstHand);
+
+  clearInterval(secondHand);
+
+  clearInterval(thirdHand);
+
+  clearInterval(fourthHand);
+  littleTens.textContent = 0;
+  button.disabled = false;
+}
 function stopClock(){
   clearInterval(firstHand);
   tens.textContent = 0;
@@ -55,5 +67,6 @@ function stopClock(){
   clearInterval(fourthHand);
   littleSeconds.textContent = 0;
   digits.forEach(item => item.style.color = "black")
+
 }
 }
