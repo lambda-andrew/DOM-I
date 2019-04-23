@@ -55,7 +55,9 @@ function endTime(){
 
   clearInterval(fourthHand);
   littleTens.textContent = 0;
-  button.disabled = false;
+  bigSeconds.textContent = 0;
+  littleSeconds.textContent = 0;
+
 }
 function stopClock(){
   clearInterval(firstHand);
